@@ -819,6 +819,9 @@ div#ui-datepicker-div {
 	gap: 12px;
 }
 .scan-btn {
+	position: fixed;         /* or absolute, depending on your layout */
+	top: 15px;               /* added 'px' to the value */
+	right: 15px;              /* optional: to position it from the left */
 	width: 60px;
 	height: 60px;
 	background: var(--15, #e4c590);
@@ -826,7 +829,9 @@ div#ui-datepicker-div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	z-index: 999;            /* optional: ensures it's above other elements */
 }
+
 .add-to-btn-sec {
 	display: flex;
 	align-items: center;
